@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <div class="calculator">
+        <div class="showinput">
+          <input type="text" placeholder="0" name="inputvalue" id="inputid"> 
+        </div>
+        <div class="numarea">
+          <div class="num_item">
+            <button type="button" class="btn" onclick="ac()">AC</button>
+            <button type="button" class="btn" onclick="del()">De</button>
+            <button type="button" class="btn" onclick="percent()">%</button>
+            <button type="button" class="btn" onclick="devide()">/</button>
+          </div>
+          <div class="num_item">
+            <button type="button" class="btn" id="buttonid1" onclick="buttonClick(this)">7</button>
+            <button type="button" class="btn" id="buttonid2" onclick="buttonClick(this)">8</button>
+            <button type="button" class="btn" id="buttonid3" onclick="buttonClick(this)">9</button>
+            <button type="button" class="btn" onclick="into()">*</button>
+          </div>
+          <div class="num_item">
+            <button type="button" class="btn" id="buttonid4" onclick="buttonClick(this)">4</button>
+            <button type="button" class="btn" id="buttonid5" onclick="buttonClick(this)">5</button>
+            <button type="button" class="btn" id="buttonid6" onclick="buttonClick(this)">6</button>
+            <button type="button" class="btn" onclick="minus()">-</button>
+          </div>
+          <div class="num_item">
+            <button type="button" class="btn" id="buttonid7" onclick="buttonClick(this)">1</button>
+            <button type="button" class="btn" id="buttonid8" onclick="buttonClick(this)">2</button>
+            <button type="button" class="btn" id="buttonid9" onclick="buttonClick(this)">3</button>
+            <button type="button" class="btn" id="plusbtn" onclick="plus()">+</button>
+          </div>
+          <div class="num_item">
+            <button type="button" class="btn" id="buttonid10" onclick="buttonClick(this)">00</button>
+            <button type="button" class="btn" id="buttonid10" onclick="buttonClick(this)">0</button>
+            <button type="button" class="btn" onclick="dot()">.</button>
+            <button type="button" class="btn" onclick="equal()">=</button>
+          </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
